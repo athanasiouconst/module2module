@@ -11,7 +11,7 @@
 
     <artifactId>module2moduleTemplate</artifactId>
 
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>module2moduleTemplate</finalName>

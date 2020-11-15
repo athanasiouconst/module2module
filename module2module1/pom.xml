@@ -15,24 +15,49 @@
 
     <build>
         <finalName>module2module1</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>module2moduleTemplate</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-            <type>war</type>
-        </dependency>
 
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>module2moduleDependencies</artifactId>
+            <artifactId>module2module0</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
 
     </dependencies>
 </project>

@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="module2moduleDependencies" />
-        <module name="module2moduleTemplate" />
-        <module name="module2module2" />
         <module name="module2module1" />
         <module name="module2module0" />
+        <module name="module2moduleDependencies" />
+        <module name="module2moduleTemplate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="module2module2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
